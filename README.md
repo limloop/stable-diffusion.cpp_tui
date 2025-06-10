@@ -26,13 +26,14 @@ This script provides an interactive interface for configuring parameters and run
 
 Before use, you need to configure the base path and folder structure:
 
-1. Open the script in a text editor
-2. Locate the `DEFAULT_PATH` definition line and modify it:
+1. Download [stable-diffusion.cpp](https://github.com/leejet/stable-diffusion.cpp)
+2. Open the script in a text editor
+3. Locate the `DEFAULT_PATH` definition line and modify it:
    ```python
    DEFAULT_PATH = Path("path to your folder with models/lora/vae etc.")
    ```
-3. Change the path to your base models directory
-4. Ensure the following subdirectories exist in the base directory:
+4. Change the path to your base models directory
+5. Ensure the following subdirectories exist in the base directory:
    ```
    ├── configs/       - JSON configuration files
    ├── embedding/     - Embedding models
@@ -40,7 +41,7 @@ Before use, you need to configure the base path and folder structure:
    ├── model/        - Main Stable Diffusion models
    └── vae/          - VAE models
    ```
-5. Locate the `SD_PATH` definition line and modify it:
+6. Locate the `SD_PATH` definition line and modify it:
    ```python
    SD_PATH = "path to stable-diffusion.cpp executable"
    ```
@@ -158,13 +159,14 @@ When launching generation, you can specify additional Stable Diffusion flags, fo
 
 Перед использованием необходимо настроить базовый путь и структуру папок:
 
-1. Откройте скрипт в текстовом редакторе
-2. Найдите строку с определением `DEFAULT_PATH` и измените ее:
+1. Скачать [stable-diffusion.cpp](https://github.com/leejet/stable-diffusion.cpp)
+2. Откройте скрипт в текстовом редакторе
+3. Найдите строку с определением `DEFAULT_PATH` и измените ее:
    ```python
    DEFAULT_PATH = Path("путь до вашей папки с моделями/lora/vae и другом")
    ```
-3. Измените путь на ваш базовый каталог с моделями
-4. Убедитесь, что в базовом каталоге созданы следующие поддиректории:
+4. Измените путь на ваш базовый каталог с моделями
+5. Убедитесь, что в базовом каталоге созданы следующие поддиректории:
    ```
    ├── configs/       - JSON-файлы конфигураций
    ├── embedding/     - Модели embedding
@@ -172,7 +174,7 @@ When launching generation, you can specify additional Stable Diffusion flags, fo
    ├── model/         - Основные модели Stable Diffusion
    └── vae/           - VAE модели
    ```
-5. Найдите строку с определением `SD_PATH` и измените ее:
+6. Найдите строку с определением `SD_PATH` и измените ее:
    ```python
    SD_PATH = "путь до исполняемого файла stable-diffusion.cpp"
    ```
